@@ -5,7 +5,8 @@ import subprocess
 from datetime import datetime
 from typing import List, Dict
 
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.1:8b")  # par défaut modèle 8 b
+# ▸ 1 — Choix du modèle ollama
+OLLAMA_MODEL = "llama3.2:3b"
 
 # ▸ 2.1 — Prompt système pour la réponse finale
 SYSTEM_PROMPT = (
