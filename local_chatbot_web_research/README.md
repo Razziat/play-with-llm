@@ -25,8 +25,8 @@ Ce dépôt contient :
 ## 2. Cloner le projet
 
 ```bash
-git clone https://github.com/<votre‑org>/<repo>.git
-cd <repo>
+git clone git@github.com:Razziat/play-with-llm.git ou https://github.com/Razziat/play-with-llm.git
+cd play_with_llm/local_chatbot_web_research
 ```
 
 ---

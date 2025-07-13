@@ -21,7 +21,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# ──────── Schémas Pydantic ────────────────────────────────────────────────────
+# ──────── classes ────────────────────────────────────────────────────
 class ChatRequest(BaseModel):
     message: str
     use_search: bool = True

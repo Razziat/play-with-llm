@@ -103,7 +103,7 @@ const styles = {
     flexDirection: "column",
   },
   chatWindow: {
-    flex: 1,                        // ← grandit / rétrécit automatiquement
+    flex: 1,
     overflowY: "auto",
     border: "1px solid #ddd",
     borderRadius: 8,
