@@ -22,13 +22,13 @@ def _post(endpoint: str, payload: Dict) -> Dict:
     url = f"{_BASE}/{endpoint.lstrip('/')}"
     with httpx.Client(timeout=15) as client:
         r = client.post(url, json=payload, headers=headers)
-    print("DEBUG Serper", r.status_code)       # <——
-    print("DEBUG payload", payload)            # <——
+    print("DEBUG Serper", r.status_code)
+    print("DEBUG payload", payload)
     try:
-        print("DEBUG body", r.json())          # <——
+        print("DEBUG body", r.json())
     except Exception:
         print("DEBUG raw", r.text)
-    r.raise_for_status()                       # lève si 4xx/5xx
+    r.raise_for_status()
     return r.json()
 
 def _news_items(data: Dict, max_results: int) -> List[Dict]:

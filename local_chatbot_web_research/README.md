@@ -18,7 +18,7 @@ Ce dépôt contient :
 | **Python**            |  ≥ 3.10                      |
 | **Node.js**           |  ≥ 18                        |
 | **npm / pnpm / yarn** | dernière LTS                 |
-| **Ollama**            | installé & modèle téléchargé |
+| **Ollama**            | installé & modèle llama3.2:3b|
 
 ---
 
@@ -47,7 +47,7 @@ SERPER_API_KEY="xxxxxxxxxxxxxxxxxxxxxxxx"    # clé obtenue sur serper.dev
 ```
 
 > Pour utiliser un autre modèle Ollama que celui par défaut, ouvrez **`backend/llm.py`**, ligne 8, et remplacez la valeur dans la variable `OLLAMA_MODEL`.
-
+> Pour avoir de bons résultats il est conseillé d'utiliser un modèle de 8b de paramètres. Le modèle par défaut est de 3b de paramètres mais ne donne pas de très bons résultats.
 
 ---
 
