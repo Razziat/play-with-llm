@@ -26,14 +26,14 @@
 
 ### 1.3 Estimation des coûts mensuels (ordre de grandeur)
 
-| Ressource                     | Coût *pay‑as‑you‑go*          |
+| Ressource                     | Coût                          |
 | ----------------------------- | ----------------------------- |
 | VM GPU **Standard\_NC6s\_v3** | \~3,06 \$/h ⇒ \~2 300 \$/mois |
 | Tier AKS Standard (option)    | \~72 \$/mois                  |
 | ACR + stockage images         | < 1 \$/mois                   |
 | Logs/Monitoring (1 Go/j)      | \~70 \$/mois                  |
 
-* Le prix mensuel peut fortement varier en fonction du type de gpu et du type de plan Azure que l'on souhaite. Ce qui coute vraiment le plus cher est donc la ressource GPU, qui peut être fortement réduite si l'on possède sa propre capacité GPU ou passer par d'autres fournisseur comme OVH.
+* **Le prix mensuel peut fortement varier en fonction du type de gpu et du type de plan Azure que l'on souhaite (plan à l'utilisation ou non). Ce qui coute vraiment le plus cher est donc la ressource GPU, qui peut être fortement réduite si l'on possède sa propre capacité GPU ou passer par d'autres fournisseur comme OVH.**
 
 
 ### 1.4 Architecture scalable proposée
@@ -79,6 +79,8 @@
 
 * Azure DevOps / GitHub Actions: Pipelines CI/CD pour automatiser les tests, la construction des images Docker et le déploiement sur les environnements Azure.
 
+**Encore une fois, en fonction des besoins et du budget, on peut choisir de ne pas utiliser certains composants Azure. Les composants choisis dans cette stratégie permettent de s'assurer un même environnement et donc assurer un bon équilibre entre sécurité, résillience et facilité de déploiement.**
+
 ### 1.7 Considérations de sécurité
 
 * Chiffrement en transit (HTTPS, TLS).
@@ -101,7 +103,7 @@
 
 * **Container Insights** : CPU/RAM, GPU usage, logs pod.
 * **Application Insights** : latence API, taux erreurs, traces.
-* **Alertes** : CPU > 80 %, 5xx > 5 %, restart pods.
+* **Alertes** : CPU > 80 %, restart pods...
 * **Dashboards/Workbooks** pour visibilité centralisée.
 
 ### 2.3 Gestion des erreurs
