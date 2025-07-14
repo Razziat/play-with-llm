@@ -98,7 +98,7 @@ const styles = {
     maxWidth: 700,
     margin: "0 auto",
     /* occupe toute la hauteur écran moins un petit padding */
-    height: "calc(100vh - 32px)",
+    height: "calc(100vh - 110px)",
     display: "flex",
     flexDirection: "column",
   },

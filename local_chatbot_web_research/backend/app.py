@@ -81,17 +81,13 @@ async def chat(req: ChatRequest) -> ChatResponse:
 
      # ▼ 1) Déterminer combien de sources doivent être fournies
     requested = detect_num_sources(user_prompt)
-    print(requested)
     max_results = requested or MAX_RESULTS
-    print(max_results)
 
     # 1) Générer la requête Web *seulement si use_search = True*
     if req.use_search:
         try:
             web_query = build_search_query(user_prompt)
-            print("Debug - Search query :", web_query)
             sources = search_web(web_query, max_results=max_results)
-            print("Debug - SerpApi result :", sources)
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Erreur recherche : {e}")
     else:
