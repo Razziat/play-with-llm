@@ -13,12 +13,12 @@ Ce dépôt contient :
 
 ## 1. Prérequis
 
-| Outil                 | Version conseillée           |
-| --------------------- | ---------------------------- |
-| **Python**            |  ≥ 3.10                      |
-| **Node.js**           |  ≥ 18                        |
-| **npm / pnpm / yarn** | dernière LTS                 |
-| **Ollama**            | installé & modèle llama3.2:3b|
+| Outil                 | Version conseillée           v                      |
+| --------------------- | ----------------------------------------------------|
+| **Python**            |  ≥ 3.10                                             |
+| **Node.js**           |  ≥ 18                                               |
+| **npm / pnpm / yarn** | dernière LTS                                        |
+| **Ollama**            | installé & **ollama serve exécuté** & modèle llama3.2:3b|
 
 ---
 
