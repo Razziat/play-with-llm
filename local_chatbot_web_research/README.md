@@ -7,7 +7,7 @@ Ce dépôt contient :
 | Dossier     | Contenu principal                             |
 | ----------- | --------------------------------------------- |
 | `backend/`  | API FastAPI, recherche Serper.dev, LLM Ollama |
-| `frontend/` | Application React (Create React App)          |
+| `frontend/` | Application React (Vite)                      |
 
 ---
 
@@ -70,7 +70,7 @@ python -m uvicorn app:app --reload  # API sur http://127.0.0.1:8000
 ```bash
 cd frontend
 npm install
-npm start     # lance CRA sur http://localhost:3000
+npm run dev     # lance CRA sur http://localhost:3000
 ```
 
 ---

@@ -7,7 +7,7 @@ Ce script Python permet de sélectionner une image via l'explorateur de fichier,
 ## Prérequis
 
 * **Python 3.6+**
-* **Tkinter** (inclus par défaut dans la plupart des distributions Python)
+* **Tkinter** (inclus par défaut dans la plupart des distributions Python). Si besoin installer en utilisant la commande sudo apt-get install python3-tk sur linux ou wsl
 * **Ollama** installé avec le modèle **qwen2.5vl:3b**
 
   ```bash
